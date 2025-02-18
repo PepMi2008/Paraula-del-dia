@@ -1,45 +1,37 @@
-console.log('')
+let paraulaperadivinar= 'pepot';
 
-const paraulaperadivinar= 'pepot';
+let paraulaescrita='palma';
 
-const paraulaescrita='palma';
+paraulaperadivinar = paraulaperadivinar.toUpperCase();
+paraulaescrita = paraulaescrita.toUpperCase();
+console.log(paraulaperadivinar);
+console.log(paraulaescrita);
 
+if(paraulaescrita.length == paraulaperadivinar.length){
+   //continua
+   for(let posicióparaula=0; posicióparaula < paraulaescrita.length; posicióparaula += 1){
+      if(paraulaperadivinar.charAt(posicióparaula) == paraulaescrita.charAt(posicióparaula)){
+         //verd
+         console.log('verd');
+      }
+      else if(paraulaperadivinar.includes(paraulaescrita.charAt(posicióparaula))){
+         //groc
+         console.log('groc');
+      }
+      else{
+         //vermell
+         console.log('gris');
+      }
 
-function convertirMajuscules(paraula) {
-   return paraula.toLocaleUpperCase('paraula')
+   }
+
 }
-function midaParaula(paraula) {
-
-   //console.log(`La paraula ${paraula} te ${paraula.length} caracters`);
-   return paraula.length;
+else{
+   //error
+   //tornar a introduir paraula escrita
+   //alert('Error');
+   console.log('Error');
 }
 
-
-let z = convertirMajuscules('pepot')
-let y = convertirMajuscules('palma')
-console.log(z);
-console.log(y);
-
-let x= midaParaula('pepot')
-console.log(x)
-let b =midaParaula('palma')
-console.log(b)
-
-
-//for (let i=0;)
-/*if (condition1) {
-    //  block of code to be executed if condition1 is true
-} else if (condition2) {
-    //  block of code to be executed if the condition1 is false and condition2 is true
-} else {
-    //  block of code to be executed if the condition1 is false and condition2 is false
-}
-*/
-
-
-
-
-
-
-
-
+//Si son iguales en verd
+//si hi es però no a la mateixa
