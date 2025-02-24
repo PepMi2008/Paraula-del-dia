@@ -1,0 +1,22 @@
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        input {
+            font-size: 20px;
+            padding: 5px;
+            text-transform: uppercase;
+        }
+        button {
+            font-size: 18px;
+            padding: 5px 10px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        #resultat {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+    </style>
